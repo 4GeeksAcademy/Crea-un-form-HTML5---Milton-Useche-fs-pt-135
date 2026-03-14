@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+            <div class="card col-12 col-md-10 col-lg-8 mx-auto">
+                <form action="" >
+                    <div class="card-header d-flex">
+                        <h2>Payment form example</h2>
+                    </div>
+                    <div class="card-body">
+
+                        <!--ALERTA--> 
+                        <div class="alert alert-danger" role="alert">
+                            A simple danger alert—check it out!
+                        </div>
+
+                         <!--DATOS DE LA TARJETA--> 
+                        <div class="gap-2 row needs-validation" novalidate>
+
+                            <fieldset class="col-sm-12 col-md-6 col-lg-6 needs-validation" novalidate>
+                                <label class="form-label" for="tarjeta">Card #</label>
+                                <input class="form-control" type="number" id="tarjeta" name="tajeta-bancaria" placeholder="XXXXXXXXXX" required>
+                            </fieldset>
+
+                            <fieldset class="col-sm-12 col-md-2 col-lg-2 needs-validation" novalidate>
+                                <label class="form-label" for="cvc">CVC #</label>
+                                <input class="form-control" type="number" id="cvc" name="tajeta-bancaria" placeholder="0000" required>
+                            </fieldset>
+
+                            <fieldset class="col-sm-12 col-md-4 col-lg-4 row needs-validation" novalidate>
+                                <label class="form-label" for="amount">Amount #</label>
+                                <div class="input-group needs-validation" novalidate>
+                                    <span class="input-group-text">$</span>
+                                    <input type="text" class="form-control" aria-label="Amount" placeholder="Amount" required>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                         <!--DATOS DE LA PERSONA GENERAL--> 
+                        <div class="row col-12 gap-2 ">
+
+                            <!--DATOS DE LA PERSONA IZQUIERDA--> 
+                            <div class="col-sm-12 col-md-6 col-lg-6 row">
+                                <fieldset class="col-12 row needs-validation g-3" novalidate>
+                                    <label class="form-label Quimargen" for="name">Firs Name</label>
+                                    <input class="form-control Quimargen" type="text" name="Datos-persona" id="name" required>
+                                </fieldset>
+
+                                <fieldset class="col-12 row needs-validation g-3" novalidate>
+                                    <label class="form-label Quimargen" for="City">City</label>
+                                    <input class="form-control Quimargen" type="text" name="Datos-persona" id="City" required>
+                                </fieldset>
+
+                                <div class="col-12">
+                                    <fieldset class="col-sm-12 col-md-7 col-lg-7 row">
+                                        <label class="form-label" for="We accept">We accept</label>
+                                        <div class="d-flex justify-content-center gap-2 text-bg-secondary p-3 flex-wrap">
+                                            <input type="radio" name="Datos-persona" id="master" required>
+                                            <label for="master">
+                                            <img src="icons/tarjeta.svg" width="30px">
+                                            </label>
+
+                                            <input type="radio" name="Datos-persona" id="visa" required>
+                                            <label for="visa">
+                                            <img src="icons/logotipo-de-visa.svg" width="30px">
+                                            </label>
+
+                                            <input type="radio" name="Datos-persona" id="maestro" required>
+                                            <label for="maestro">
+                                            <img src="icons/maestro-tarjeta.svg" width="30px">
+                                            </label>
+
+                                            <input type="radio" name="Datos-persona" id="american" required>
+                                            <label for="american">
+                                            <img src="icons/american-express.svg" width="30px">
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+                                
+                            </div>
+
+                            <!--DATOS DE LA PERSONA DERECHA--> 
+                            <div class="col-sm-12 col-md-6 col-lg-6 row g-3">
+                                    <fieldset class="col-12 row needs-validation" novalidate>
+                                        <label class="form-label Quimargen" for="Last-name">Last Name</label>
+                                        <input class="form-control Quimargen" type="text" name="Datos-persona" id="Last-name" required>
+                                    </fieldset>
+
+                                    <div class="col-12 row gap-2 ">
+                                        <fieldset class="col-sm-12 col-md-6 col-lg-6 row needs-validation g-3" novalidate>
+                                            <label class="form-label Quimargen" for="State">State</label>
+                                            <select class="form-control Quimargen" name="Datos-persona" id="State" required>
+                                                <option selected disabled value="">Pick a state</option>
+                                                <option value="Andalucia">Andalucia</option>
+                                                <option value="Aragon">Aragon</option>
+                                                <option value="Madrid">Madrid</option>
+                                                <option value="Cataluña">Cataluña</option>
+                                            </select>
+                                        </fieldset>
+
+                                        <fieldset class="col-sm-12 col-md-6 col-lg-6 row needs-validation g-3" novalidate>
+                                            <label class="form-label Quimargen" for="Postal-Code">Postal code</label>
+                                            <input class="form-control Quimargen" type="number" name="Datos-persona" id="Postal-Code" required>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-12 row needs-validation g-3"  novalidate>
+                                        <label class="form-label Quimargen" for="massage">Massage</label>
+                                        <textarea class="form-control Quimargen" name="Datos-persona" id="message" required></textarea>
+                                        <h6 class="text-body-secondary Quimargen">add any notes here</h6>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <!--Botones-->
+                         <div class="card-footer row ">
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button class="btn btn-secondary">cancel</button>
+                                <button class="btn btn-primary">Send</button>
+                            </div>
+                         </div>
+                    </div>
+                </form>
+            </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>
