@@ -16,7 +16,7 @@
 
                         <!--ALERTA--> 
                         <div class="alert alert-danger" role="alert">
-                            A simple danger alert—check it out!
+                            Some fields are missing
                         </div>
 
                          <!--DATOS DE LA TARJETA--> 
@@ -24,19 +24,19 @@
 
                             <fieldset class="col-sm-12 col-md-6 col-lg-6 needs-validation" novalidate>
                                 <label class="form-label" for="tarjeta">Card #</label>
-                                <input class="form-control" type="number" id="tarjeta" name="tajeta-bancaria" placeholder="XXXXXXXXXX" required>
+                                <input class="form-control" type="text" inputmode="numeric" maxlength="19" id="tarjeta" name="tajeta-bancaria" placeholder="XXXX XXXX XXXX XXXX" required>
                             </fieldset>
 
                             <fieldset class="col-sm-12 col-md-2 col-lg-2 needs-validation" novalidate>
                                 <label class="form-label" for="cvc">CVC #</label>
-                                <input class="form-control" type="number" id="cvc" name="tajeta-bancaria" placeholder="0000" required>
+                                <input class="form-control" type="text" inputmode="numeric" maxlength="4" pattern=""  id="cvc" name="tajeta-bancaria" placeholder="0000" required>
                             </fieldset>
 
                             <fieldset class="col-sm-12 col-md-4 col-lg-4 row needs-validation" novalidate>
                                 <label class="form-label" for="amount">Amount #</label>
                                 <div class="input-group needs-validation" novalidate>
                                     <span class="input-group-text">$</span>
-                                    <input type="text" class="form-control" aria-label="Amount" placeholder="Amount" required>
+                                    <input type="text" class="form-control" inputmode="numeric" aria-label="Amount" placeholder="Amount" required>
                                 </div>
                             </fieldset>
                         </div>
@@ -45,7 +45,7 @@
                         <div class="row col-12 gap-2 ">
 
                             <!--DATOS DE LA PERSONA IZQUIERDA--> 
-                            <div class="col-sm-12 col-md-6 col-lg-6 row">
+                            <div class="col-sm-12 col-md-6 col-lg-6 row justify-content-center">
                                 <fieldset class="col-12 row needs-validation g-3" novalidate>
                                     <label class="form-label Quimargen" for="name">Firs Name</label>
                                     <input class="form-control Quimargen" type="text" name="Datos-persona" id="name" required>
@@ -87,7 +87,7 @@
                             </div>
 
                             <!--DATOS DE LA PERSONA DERECHA--> 
-                            <div class="col-sm-12 col-md-6 col-lg-6 row g-3">
+                            <div class="col-sm-12 col-md-6 col-lg-6 row g-3 justify-content-center">
                                     <fieldset class="col-12 row needs-validation" novalidate>
                                         <label class="form-label Quimargen" for="Last-name">Last Name</label>
                                         <input class="form-control Quimargen" type="text" name="Datos-persona" id="Last-name" required>
